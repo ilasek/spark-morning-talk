@@ -1,0 +1,9 @@
+logs
+spark-warehouse
+.idea
+target
+data/patients_large.csv
+.DS_Store
+aws
+~$*
+secrets
