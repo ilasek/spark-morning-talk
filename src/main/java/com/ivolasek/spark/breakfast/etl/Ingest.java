@@ -12,9 +12,10 @@ import org.apache.spark.sql.types.DataTypes;
  * The second argument is a jdbc connection string to a Postgres database.</p>
  * <p>Run on cluster:</p>
  * <pre>
- * spark-submit --master yarn-client --num-executors 10 --class com.ivolasek.spark.breakfast.ingest.IngestCluster \
+ * spark-submit --master yarn --num-executors 20 --executor-cores 1 --executor-memory 1G\
+ *      --class com.ivolasek.spark.breakfast.etl.Ingest \
  *      spark-breakfast-1.0-SNAPSHOT-jar-with-dependencies.jar \
- *      "s3://spark-breakfast/patients_large.csv"
+ *      "s3://spark-breakfast/patients_large.csv" "jdbc:postgresql://db.host/spark"
  * </pre>
  *
  * <p>Used dataset can be downloaded from
