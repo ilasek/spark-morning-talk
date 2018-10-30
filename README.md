@@ -1,4 +1,4 @@
-#Spark Introduction
+# Spark Introduction
 This demo has been originally prepared for Datascript Spark Morning Talk (http://www.datascript.cz/morning-talks/apache-spark-jak-to-jiskri-v-msd/).
 
 ## Content of this repo
@@ -7,7 +7,7 @@ This demo has been originally prepared for Datascript Spark Morning Talk (http:/
 * [Sample ETL job](src/main/java/com/ivolasek/spark/breakfast/etl/Ingest.java)
 * [Sample Spark Streaming job](src/main/java/com/ivolasek/spark/breakfast/streaming/SentimentAnalysis.java) for sentiment analysis of tweets
 * [Data](data) used in examples
-* [database](database) SQL scripts used to generate target postgresSQL database
+* [database](database) SQL scripts used to generate target PostgresSQL database
 * [run_zeppelin.sh](run_zeppelin.sh) script starting Zeppelin notebook using Docker
 
 ## How to run ETL
